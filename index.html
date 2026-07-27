@@ -12,7 +12,7 @@
         body{
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #BF9CEA;
+            background-color: #e69cea;
             color: #000;
         }
 
@@ -57,4 +57,15 @@
     </main>
 
 </body>
-</html>
+</html><button onclick="botaoClicado()" id="botao">
+    Cliques: <span>0</span>
+</button>
+
+<script>
+    let botao = document.getElementById("botao");
+
+    function botaoClicado() {
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
